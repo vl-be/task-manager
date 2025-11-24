@@ -1,0 +1,18 @@
+:root {
+  --custom-success-color: #52c41a; 
+  --custom-processing-color: #1677ff; 
+  --custom-main-accent-color: #1890ff; 
+  --white: #fff;
+  --grey: #f9f9f9;
+}
+
+body {
+  margin: 0;
+  padding: 0; 
+  background-color: #f0f2f5;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
