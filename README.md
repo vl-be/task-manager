@@ -1,3 +1,3 @@
 # Basic task manager
 
-Simple dashboard project with weather data from free resource.
+Simple dashboard project I intent to improve over time.
