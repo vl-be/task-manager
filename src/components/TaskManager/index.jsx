@@ -65,9 +65,6 @@ const TaskManager = () => {
 
   const filteredTodos = useMemo(() => {
     return todos.filter(todo => {
-      
-      if (filterCategory !== 'all' && todo.category !== filterCategory) return false;
-      
       if (filterDeadline) {
           if (!todo.deadline) return false;
           
@@ -77,6 +74,13 @@ const TaskManager = () => {
               return false;
           }
       }
+      console.log(todo);
+      
+      if (filterCategory == 'none' && !todo.category) return true;
+
+      if (filterCategory !== 'all' && todo.category !== filterCategory) return false;
+      
+      
 
       return true;
     });

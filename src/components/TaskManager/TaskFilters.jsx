@@ -18,7 +18,7 @@ const TaskFilters = ({
              value={filterCategory} 
              onChange={setFilterCategory} 
              style={{ width: 200 }}
-             options={[{ value: 'all', label: 'All categories' }, ...categories.map(category => ({ value: category, label: category }))] }
+             options={[{ value: 'all', label: 'All categories' }, { value: 'none', label: 'None' }, ...categories.map(category => ({ value: category, label: category }))] }
            />
         </Col>
         <Col>
